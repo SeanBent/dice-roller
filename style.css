@@ -27,8 +27,13 @@ h1 {
   h1 {
     font-size: 1em;
   }
-}   
+}
 
+@media screen and (max-width: 289px) {
+  h1 {
+    font-size: 1.2em;
+  }
+}  
 
 @media screen and  (max-width: 392px) {
   h1 {
@@ -116,6 +121,7 @@ h1 {
 .roller-controller {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
   width: 50%;
   height: 100%;
@@ -127,12 +133,15 @@ h1 {
 }
 
 
-.dice-number-controls > div {
-  align-self: flex-start;
+.dice-number-controls {
+  /* align-self: flex-start; */
+  flex-direction: column;
 }
 
-.modifier-controls > div{
-  align-self: flex-start;
+.modifier-controls {
+  flex-direction: column;
+  /* align-self: flex-start; */
+
 }
 
 .styled-input {
