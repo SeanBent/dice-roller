@@ -1,0 +1,156 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+</style>
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+h1 {
+  /* font-family: 'MedievalSharp', cursive; */
+  /* font-family: 'Edu SA Beginner', cursive; */
+  /* background-color: #3a9198; */
+  font-family: 'Permanent Marker', cursive;
+  font-size: 3.5em;
+}
+
+.h1Box {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh
+}
+
+@media screen and  (max-width: 392px) {
+  h1 {
+    font-size: 2.3em;}
+}
+
+@media screen and (max-width: 767px) {
+  h1 {
+    /* font-size: 3em; */
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  h1 {
+    /* font-size: 4em; */
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  h1 {
+    /* font-size: 4.5em; */
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  h1 {
+    font-size: 5em;
+  }
+}
+
+
+
+/*Div id for explanation text  */
+#explanatory-text {}
+
+/*Div id for screen area covered by the app  */
+#app-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 90vh;
+  /* 80vh original*/
+  /* border: 1px solid black; */
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+/*Div id for screen area covered by the dice graphics - child of app-area  */
+#image-flexbox {
+  display: block;
+  justify-content: center;
+  width: auto;
+  /* min-height: 15vh; */
+  /* background-color: #8383ec; */
+  box-sizing: border-box;
+  overflow: hidden;
+  
+}
+
+/* img id for dice image */
+#dice-image {
+  width:auto;
+  height: 100%;
+  box-sizing: border-box;
+  /* margin: 5px; */
+}
+
+
+.control-area {
+  display: flex;
+  flex-direction: row;
+  /* Set back to 'row' */
+  flex-wrap: wrap;
+  /* Added to allow wrapping of the spans */
+  justify-content: center;
+  /* To center the spans */
+  width: 100%;
+  height: 25%;
+  /* background-color: #5f454e; */
+  /* border: 1px solid #111113; */
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.roller-controller {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  border: 1px solid #111113;
+  box-sizing: border-box;
+  border-radius: 10px;
+  /* background-color: #5f454e; */
+}
+
+.styled-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 12px;
+  width: 25px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  /* Adds space around items */
+
+}
+
+/*Div id for screen area covered by the Output area - child of app-area */
+#output-area {
+  display: flex;
+  width: 100%;
+  height: 30%;
+  background-color: #ff0059;
+  border: 1px #111113;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+#bottom-of-page {
+  display: flex;
+  width: 100%;
+  height: 10%;
+  background-color: #00ff62;
+  border: 1px solid #111113;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+/* Inpu controller stylings  */

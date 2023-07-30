@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+</head>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@700&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+<body>
+  <div class="h1Box">
+  <h1>D&D Dice Roll</h1>
+  </div>
+
+    <div id="app-area">
+
+      <div id="image-flexbox">
+        <!-- Graphics Area-->
+        <img id="dice-image" src="images/dice-set.png" alt="Graphic of six dice types from D and D">
+      </div>
+       <section id="explanatory-text">
+    <div>
+      <h2> Choose from the dice types, select how many to roll, add modifiers, and roll to see results!
+      </h2>
+    </div>
+
+
+
+      <div class="control-area">
+        <!-- d4, d6, and d8 Area -->
+
+        <!-- d4 Area -->
+        <div class="roller-controller">
+          <div class="top">
+            <input type="number" value="0" min="0" class="styled-input" />
+          </div>
+          <div class="bottom">
+            <input type="number" value="0" min="0" class="styled-input" />
+          </div>
+        </div> <!-- End of d4 Area -->
+
+        <div class="roller-controller">
+          <!-- d6Area -->
+          <span>d6 Dice Area</span>
+          <input type="number" value="0" min="0" class="styled-input" />
+          <div class="dice-controls">
+            <span class="up-arrow">▲</span>
+            <span class="down-arrow">▼</span>
+          </div>
+          <input type="number" value="0" class="styled-input" />
+        </div> <!-- End of d6Area -->
+      </div> <!-- End of control-area -->
+
+      <div class="control-area">
+        <div class="roller-controller">
+          <!-- d8 Area -->
+          <span>d8 Dice Area</span>
+          <input type="number" value="0" min="0" class="styled-input" />
+          <div class="dice-controls">
+            <span class="up-arrow">▲</span>
+            <span class="down-arrow">▼</span>
+          </div>
+          <input type="number" value="0" class="styled-input" />
+        </div> <!-- End of d8 Area -->
+
+        <div class="roller-controller">
+          <!-- d10 Area -->
+          <span>d10 Dice Area</span>
+          <input type="number" value="0" min="0" class="styled-input" />
+          <div class="dice-controls">
+            <span class="up-arrow">▲</span>
+            <span class="down-arrow">▼</span>
+          </div>
+          <input type="number" value="0" class="styled-input" />
+        </div> <!-- End of d10 Area -->
+      </div> <!-- End of control-area -->
+
+      <div class="control-area">
+        <div class="roller-controller">
+          <!-- d12 Area -->
+          <span>d12 Dice Area</span>
+          <input type="number" value="0" min="0" class="styled-input" />
+          <div class="dice-controls">
+            <span class="up-arrow">▲</span>
+            <span class="down-arrow">▼</span>
+          </div>
+          <input type="number" value="0" class="styled-input" />
+        </div> <!-- End of d12 Area -->
+
+        <div class="roller-controller">
+          <!-- d20 Area -->
+          <span>d20 Dice Area</span>
+          <input type="number" value="0" min="0" class="styled-input" />
+          <div class="dice-controls">
+            <span class="up-arrow">▲</span>
+            <span class="down-arrow">▼</span>
+          </div>
+          <input type="number" value="0" class="styled-input" />
+        </div> <!-- End of d20 Area -->
+      </div> <!-- End of control-area -->
+
+
+
+      <!-- <div id="output-area">
+        <h3>Output Area</h3>
+      </div>
+
+      <div id="bottom-of-page">
+        Bottom of page
+      </div> -->
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
