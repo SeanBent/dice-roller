@@ -120,7 +120,7 @@ h1 {
 
 .roller-controller {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-evenly;
   align-items: flex-start;
   width: 50%;
@@ -132,6 +132,25 @@ h1 {
   /* background-color: #5f454e; */
 }
 
+.top-of-controller {
+  display: flex;
+  flex-direction: row;
+  height: 60%;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.bottom-of-controller {
+  display: flex;
+  flex-direction: row;
+  height: 40%;
+  width: 100%;
+  justify-content: center;
+  align-items: flex-start;
+  /* background-color: blue; */
+  /* display: none; */
+}
 
 .dice-number-controls {
   /* align-self: flex-start; */
