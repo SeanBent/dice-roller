@@ -5,6 +5,9 @@
 html {
   height: 100%;
   width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 h1 {
@@ -70,7 +73,7 @@ h1 {
 
 /*Div id for screen area covered by the dice graphics - child of app-area  */
 #image-flexbox {
-  display: block;
+  display: flex;
   justify-content: center;
   width: auto;
   /* min-height: 15vh; */
