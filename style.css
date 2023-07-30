@@ -23,14 +23,21 @@ h1 {
   height: 10vh
 }
 
+@media screen and (max-width: 265px) {
+  h1 {
+    font-size: 1em;
+  }
+}   
+
+
 @media screen and  (max-width: 392px) {
   h1 {
-    font-size: 2.3em;}
+    font-size: 1.8em;}
 }
 
 @media screen and (max-width: 767px) {
   h1 {
-    /* font-size: 3em; */
+    font-size: 2.2em;
   }
 }
 
