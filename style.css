@@ -120,9 +120,9 @@ h1 {
 
 .roller-controller {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
   width: 50%;
   height: 100%;
   border: 1px solid #111113;
