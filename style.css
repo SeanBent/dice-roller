@@ -1,6 +1,4 @@
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
-</style>
+<style> @import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap'); </style>
 
 html {
   height: 100%;
@@ -76,7 +74,7 @@ h1 {
   display: flex;
   justify-content: center;
   width: auto;
-  /* min-height: 15vh; */
+  min-height: 15vh;
   /* background-color: #8383ec; */
   box-sizing: border-box;
   overflow: hidden;
@@ -87,7 +85,7 @@ h1 {
 #dice-image {
   width:auto;
   height: 100%;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   /* margin: 5px; */
 }
 
@@ -117,7 +115,17 @@ h1 {
   border: 1px solid #111113;
   box-sizing: border-box;
   border-radius: 10px;
+  overflow: hidden;
   /* background-color: #5f454e; */
+}
+
+
+.dice-number-controls > div {
+  align-self: flex-start;
+}
+
+.modifier-controls > div{
+  align-self: flex-start;
 }
 
 .styled-input {
