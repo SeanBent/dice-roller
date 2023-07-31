@@ -167,7 +167,7 @@ h1 {
 
 .modifier-controls {
   flex-direction: column;
-  /* align-self: flex-start; */
+  align-content: center;
 
 }
 
@@ -186,7 +186,7 @@ h1 {
 
 }
 
-/*Div id for screen area covered by the Output area - child of app-area */
+/* Div id for screen area covered by the Output area - child of app-area
 #output-area {
   display: flex;
   width: 100%;
@@ -195,16 +195,44 @@ h1 {
   border: 1px #111113;
   box-sizing: border-box;
   border-radius: 10px;
-}
+} */
 
 #bottom-of-page {
   display: flex;
   width: 100%;
-  height: 10%;
-  background-color: #00ff62;
+  height: 20vh;
+  flex-direction: row-reverse;
+  justify-content: space-between;
   border: 1px solid #111113;
   box-sizing: border-box;
   border-radius: 10px;
+  /* background-image: linear-gradient(to right, #ff0000, #00ff00); */
+}
+
+#output-screen {
+  background-color: #111113;
+  color : white;
+  width: 45%;
+  height:87%;
+  margin: 10px 10px 10px 10px;
+  padding: 5px;
+  overflow: hidden;
 }
 
 /* Inpu controller stylings  */
+
+@media screen and (max-width: 440px) {
+  .control-area {
+    height: 25vh;
+  }
+  .top-of-controller {
+    flex-direction: column;
+    height: 70%;
+  }
+  .bottom-of-controller {
+    height: 30%;
+  }
+  }
+
+}
+  
