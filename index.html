@@ -25,165 +25,180 @@
   </div>
 </header>
 
-    <div id="app-area">
+  <div id="app-area">
 
-      <div id="image-flexbox">
+    <div id="image-flexbox">
         <!-- Graphics Area-->
         <img id="dice-image" src="images/dice-set.png" alt="Graphic of six dice types from D and D">
-      </div>
-       <section id="explanatory-text">
+    </div>
+
     <div>
       <h2>Choose from the dice types, select how many to roll, add modifiers, and roll to see results!
       </h2>
     </div>
 
+    <div id="console-area">
 
+      <div id="output-screen">
+        <p> 4d6 + 5, results: 3, 2, 6, 5</p>
+        <p>Total: 16 + 5 = 21</p>
+      </div>
 
-      <div class="control-area">
-        <!-- d4, d6, and d8 Area -->
-
-        <div class="roller-controller">
-          <div class="top-of-controller">
-            <div class="dice-number-controls">
-              <div>No. of d4 Dice</div>
-              <span class="down-arrow">◀</span>
-              <input type="number" value="0" min="0" class="styled-input" />
-              <span class="up-arrow">▶</span>
-            </div>
-            <div class="modifier-controls">
-              <div>Modifier</div>
-              <span class="down-arrow">◀</span>
-              <input type="number" value="0" min="0" class="styled-input" />
-              <span class="up-arrow">▶</span>
-            </div>
-          </div>
-          <div class="bottom-of-controller"> <p>2d4 + 3</p>
-          </div>
-        </div> <!-- End of d4 Area -->
-
-        <div class="roller-controller">
-
-          <!-- d6Area -->
-          <div class="top-of-controller">
-            <div class="dice-number-controls">
-              <div>No. of d6 Dice</div>
-              <span class="down-arrow">◀</span>
-              <input type="number" value="0" min="0" class="styled-input" />
-              <span class="up-arrow">▶</span>
-            </div>
-            <div class="modifier-controls">
-              <div>Modifier</div>
-              <span class="down-arrow">◀</span>
-              <input type="number" value="0" min="0" class="styled-input" />
-              <span class="up-arrow">▶</span>
-            </div>
-          </div>
-          <div class="bottom-of-controller">
-            <p>4d6 + 7</p>
-          </div>
-        </div> <!-- End of d6Area -->
-      </div> <!-- End of control-area -->
-
-      <div class="control-area">
-        <div class="roller-controller">
-          <!-- d8 Area -->
-          <div class="top-of-controller">
-            <div class="dice-number-controls">
-              <div>No. of d8 Dice</div>
-              <span class="down-arrow">◀</span>
-              <input type="number" value="0" min="0" class="styled-input" />
-              <span class="up-arrow">▶</span>
-            </div>
-            <div class="modifier-controls">
-              <div>Modifier</div>
-              <span class="down-arrow">◀</span>
-              <input type="number" value="0" min="0" class="styled-input" />
-              <span class="up-arrow">▶</span>
-            </div>
-          </div>
-          <div class="bottom-of-controller">
-            <p>3d8 - 5</p>
-          </div>
-        </div> <!-- End of d8 Area -->
-
-        <div class="roller-controller">
-          <!-- d10 Area -->
-          <div class="top-of-controller">
-            <div class="dice-number-controls">
-              <div>No. of d10 Dice</div>
-              <span class="down-arrow">◀</span>
-              <input type="number" value="0" min="0" class="styled-input" />
-              <span class="up-arrow">▶</span>
-            </div>
-            <div class="modifier-controls">
-              <div>Modifier</div>
-              <div style="align-items: center;">
-              <span class="down-arrow">◀</span>
-              <input type="number" value="0" min="0" class="styled-input" />
-              <span class="up-arrow">▶</span>
-            </div>
-            </div>
-          </div>
-          <div class="bottom-of-controller">
-            <p>5d10</p>
-          </div>
-        </div> <!-- End of d10 Area -->
-      </div> <!-- End of control-area -->
-
-      <div class="control-area">
-        <div class="roller-controller">
-          <!-- d12 Area -->
-          <div class="top-of-controller">
-            <div class="dice-number-controls">
-              <div>No. of d12 Dice</div>
-              <span class="down-arrow">◀</span>
-              <input type="number" value="0" min="0" class="styled-input" />
-              <span class="up-arrow">▶</span>
-            </div>
-            <div class="modifier-controls">
-              <div>Modifier</div>
-              <span class="down-arrow">◀</span>
-              <input type="number" value="0" min="0" class="styled-input" />
-              <span class="up-arrow">▶</span>
-            </div>
-          </div>
-          <div class="bottom-of-controller">
-            <p>2d12 + 14</p>
-          </div>
-        </div> <!-- End of d12 Area -->
-
-        <div class="roller-controller">
-          <!-- d20 Area -->
-          <div class="top-of-controller">
-            <div class="dice-number-controls">
-              <div>No. of d20 Dice</div>
-              <span class="down-arrow">◀</span>
-              <input type="number" value="0" min="0" class="styled-input" />
-              <span class="up-arrow">▶</span>
-            </div>
-            <div class="modifier-controls">
-              <div>Modifier</div>
-              <span class="down-arrow">◀</span>
-              <input type="number" value="0" min="0" class="styled-input" />
-              <span class="up-arrow">▶</span>
-            </div>
-          </div>
-          <div class="bottom-of-controller"> <p>1d20 - 1</p>
-          </div>
-        </div> <!-- End of d20 Area -->
-      </div> <!-- End of control-area -->
-
-
-
-      <div id="bottom-of-page">
-        <div id="output-screen">
-          <p> 4d6 + 5, results: 3, 2, 6, 5</p>
-          <p>Total: 16 + 5 = 21</p>
-
+      <div id="activation-area">
+        <div id="activation-area-text">  Activation Controls </div>
+        <div id="activation-buttons">
+          <button>Roll With Advantage</button>
+          <button>Roll With Disadvantage</button>
+          <button>Roll Percetile Dice</button>
+          <button>Roll Selection</button>
         </div>
-      </div> 
-    </div>
-  </section>
+      </div>
+    </div> <!-- This is the closing div tag for #console-area -->
+
+
+
+
+    <div class="control-area">
+      <!-- d4, d6, and d8 Area -->
+
+      <div class="roller-controller">
+        <div class="top-of-controller">
+          <div class="dice-number-controls">
+            <div>No. of d4 Dice</div>
+            <span class="down-arrow"><button>◀</button></span>
+            <input type="number" value="0" min="0" class="styled-input" />
+            <span class="up-arrow"><button>▶</button></span>
+          </div>
+          <div class="modifier-controls">
+            <div>Modifier</div>
+            <span class="down-arrow"><button>◀</button></span>
+            <input type="number" value="0" min="0" class="styled-input" />
+            <span class="up-arrow"><button>▶</button></span>
+          </div>
+        </div>
+        <div class="bottom-of-controller">
+          <p>2d4 + 3</p>
+        </div>
+      </div> <!-- End of d4 Area -->
+
+      <div class="roller-controller">
+
+        <!-- d6Area -->
+        <div class="top-of-controller">
+          <div class="dice-number-controls">
+            <div>No. of d6 Dice</div>
+            <span class="down-arrow"><button>◀</button></span>
+            <input type="number" value="0" min="0" class="styled-input" />
+            <span class="up-arrow"><button>▶</button></span>
+          </div>
+          <div class="modifier-controls">
+            <div>Modifier</div>
+            <span class="down-arrow"><button>◀</button></span>
+            <input type="number" value="0" min="0" class="styled-input" />
+            <span class="up-arrow"><button>▶</button></span>
+          </div>
+        </div>
+        <div class="bottom-of-controller">
+          <p>4d6 + 7</p>
+        </div>
+      </div> <!-- End of d6Area -->
+    </div> <!-- End of control-area -->
+
+    <div class="control-area">
+      <div class="roller-controller">
+        <!-- d8 Area -->
+        <div class="top-of-controller">
+          <div class="dice-number-controls">
+            <div>No. of d8 Dice</div>
+            <span class="down-arrow"><button>◀</button></span>
+            <input type="number" value="0" min="0" class="styled-input" />
+            <span class="up-arrow"><button>▶</button></span>
+          </div>
+          <div class="modifier-controls">
+            <div>Modifier</div>
+            <span class="down-arrow"><button>◀</button></span>
+            <input type="number" value="0" min="0" class="styled-input" />
+            <span class="up-arrow"><button>▶</button></span>
+          </div>
+        </div>
+        <div class="bottom-of-controller">
+          <p>3d8 - 5</p>
+        </div>
+      </div> <!-- End of d8 Area -->
+
+      <div class="roller-controller">
+        <!-- d10 Area -->
+        <div class="top-of-controller">
+          <div class="dice-number-controls">
+            <div>No. of d10 Dice</div>
+            <span class="down-arrow"><button>◀</button></span>
+            <input type="number" value="0" min="0" class="styled-input" />
+            <span class="up-arrow"><button>▶</button></span>
+          </div>
+          <div class="modifier-controls">
+            <div>Modifier</div>
+            <span class="down-arrow"><button>◀</button></span>
+            <input type="number" value="0" min="0" class="styled-input" />
+            <span class="up-arrow"><button>▶</button></span>
+          </div>
+        </div>
+        <div class="bottom-of-controller">
+          <p>5d10</p>
+        </div>
+      </div> <!-- End of d10 Area -->
+    </div> <!-- End of control-area -->
+
+    <div class="control-area">
+      <div class="roller-controller">
+        <!-- d12 Area -->
+        <div class="top-of-controller">
+          <div class="dice-number-controls">
+            <div>No. of d12 Dice</div>
+            <span class="down-arrow"><button>◀</button></span>
+            <input type="number" value="0" min="0" class="styled-input" />
+            <span class="up-arrow"><button>▶</button></span>
+          </div>
+          <div class="modifier-controls">
+            <div>Modifier</div>
+            <span class="down-arrow"><button>◀</button></span>
+            <input type="number" value="0" min="0" class="styled-input" />
+            <span class="up-arrow"><button>▶</button></span>
+          </div>
+        </div>
+        <div class="bottom-of-controller">
+          <p>2d12 + 14</p>
+        </div>
+      </div> <!-- End of d12 Area -->
+
+      <div class="roller-controller">
+        <!-- d20 Area -->
+        <div class="top-of-controller">
+          <div class="dice-number-controls">
+            <div>No. of d20 Dice</div>
+            <span class="down-arrow"><button>◀</button></span>
+            <input type="number" value="0" min="0" class="styled-input" />
+            <span class="up-arrow"><button>▶</button></span>
+          </div>
+          <div class="modifier-controls">
+            <div>Modifier</div>
+            <div>
+              <span class="down-arrow"><button>◀</button></span>
+              <input type="number" value="0" min="0" class="styled-input" />
+              <span class="up-arrow"><button>▶</button></span>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-of-controller">
+          <p>1d20 - 1</p>
+        </div>
+      </div> <!-- End of d20 Area -->
+    </div> <!-- End of control-area -->
+
+
+
+
+    
+
 
   <script src="script.js"></script>
 </body>
