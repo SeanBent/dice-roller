@@ -7,10 +7,11 @@
   <title>D&D Dice Roller</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 
-  
+
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
 </head>
 
 
@@ -18,18 +19,19 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
 
+
 <body>
   <header>
-  <div class="h1Box">
-  <h1>D&D Dice Roller</h1>
-  </div>
-</header>
+    <div class="h1Box">
+      <h1>D&D Dice Roller</h1>
+    </div>
+  </header>
 
   <div id="app-area">
 
     <div id="image-flexbox">
-        <!-- Graphics Area-->
-        <img id="dice-image" src="images/dice-set.png" alt="Graphic of six dice types from D and D">
+      <!-- Graphics Area-->
+      <img id="dice-image" src="images/dice-set.png" alt="Graphic of six dice types from D and D">
     </div>
 
     <div>
@@ -40,17 +42,16 @@
     <div id="console-area">
 
       <div id="output-screen">
-        <p> 4d6 + 5, results: 3, 2, 6, 5</p>
-        <p>Total: 16 + 5 = 21</p>
+
       </div>
 
       <div id="activation-area">
-        <div id="activation-area-text">  Activation Controls </div>
+        <div id="activation-area-text"> Activation Controls </div>
         <div id="activation-buttons">
-          <button>Roll With Advantage</button>
-          <button>Roll With Disadvantage</button>
-          <button>Roll Percetile Dice</button>
-          <button>Roll Selection</button>
+          <button id="roll-advantage-button">Roll With Advantage</button>
+          <button id="roll-disadvantage-button">Roll With Disadvantage</button>
+          <button id="roll-percentile-button">Roll Percetile Dice</button>
+          <button id="roll-selection-button">Roll Selection</button>
         </div>
       </div>
     </div> <!-- This is the closing div tag for #console-area -->
@@ -197,10 +198,10 @@
 
 
 
-    
 
 
-  <script src="script.js"></script>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
