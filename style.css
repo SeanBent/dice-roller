@@ -75,7 +75,7 @@ h1 {
   border: 1px solid #111113;
 }
 
-.roll-selection-area {
+.custom-roll-area{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -91,7 +91,7 @@ h1 {
   box-sizing: border-box;
 }
 
-.roll-selection-area div > input {
+.custom-roll-area div > input {
 width: 10% !important;
 }
 
