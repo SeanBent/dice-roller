@@ -68,31 +68,38 @@ h1 {
 #output-screen {
   display: flex;
   width: 100%;
-  height: 20vh;
+  height: 15vh;
   border-radius: 10px;
   background-color: #111113;
   color: white;
   border: 1px solid #111113;
+  text-wrap: wrap;
+  overflow: auto;
 }
 
-.custom-roll-area{
+.custom-roll-area {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  height: 15vh;
+  height: 12vh;
   width: 100%;
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   border: 1px solid black;
   border-radius: 10px;
   box-sizing: border-box;
 }
 
+.custom-roll-area>button {
+  height: 30%;
+  width: calc(50% - 10px);
+}
+
 .custom-roll-area div > input {
-width: 10% !important;
+width: 25% !important;
 }
 
 .roll-controls {
@@ -110,18 +117,68 @@ width: 10% !important;
   justify-content: space-evenly;
 }
 
-#activation-buttons {
+.advantage-disadvantage-area {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-evenly;
-  height: 20vh;
+  padding: 2px;
+  height: 12vh;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-sizing: border-box;
 }
 
-#activation-buttons>button {
+.button-area {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 60%;
+  align-content: center;
+  box-sizing: border-box;
+}
+
+.button-area >button {
+  text-wrap: nowrap;
   height: 30%;
-  width: calc(50% - 10px);
-  /* margin: 10px; */
+  width: calc(60% - 10px);
+}
+
+.advantage-disadvantage-modifier-area {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 40%;
+  align-content: center;
+  box-sizing: border-box;
+}
+
+
+.advantage-disadvantage-modifier-area > input {
+  width: 25% !important;
+  }
+
+.percentile-dice-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+  height: 8vh;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.percentile-dice-area > button {
+  height: 50%;
+  width: calc(35% - 10px);
 }
 
 /* Media Queries for screen area */

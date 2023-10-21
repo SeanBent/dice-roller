@@ -73,15 +73,27 @@
       <div id="custom-roll-preview"></div> 
 
       <div>
-        <button id="custom-roll-button">Roll Selection</button>
+        <button id="custom-roll-button" type="button">Roll Selection</button>
       </div>
-      
+
     </div>
 
-    <div id="activation-buttons">
-      <button id="roll-advantage-button">Roll With Advantage</button>
-      <button id="roll-disadvantage-button">Roll With Disadvantage</button>
-      <button id="roll-percentile-button">Roll Percentile Dice</button>
+    <div class="advantage-disadvantage-area">
+
+      <div class="button-area">
+        <button id="roll-advantage-button" type="button">Roll With Advantage</button>
+        <button id="roll-disadvantage-button" type="button">Roll With Disadvantage</button>
+      </div>
+
+      <div class="advantage-disadvantage-modifier-area">
+        <label for="other-rolls-modifier">Modifier:</label>
+        <input type="number" id="other-rolls-modifier" value="0">
+      </div>
+  
+    </div>
+
+    <div class="percentile-dice-area">
+      <button id="roll-percentile-button" type="button">Roll Percentile Dice</button>
     </div>
 </div>
 
