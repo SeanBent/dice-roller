@@ -3,7 +3,7 @@
 const numberOfDiceInput = document.getElementById('number-of-dice'); //Gets the input elements from the HTML
 const numberOfSidesInput = document.getElementById('number-of-sides');
 const modifierInputCustomRoll = document.getElementById('custom-roll-modifier');
-const modifierInputOtherRolls = document.getElementById('other-rolls-modifier');
+const modifierInputAdvantageDisadvantage = document.getElementById('advantage-disadvantage-modifier');
 
 const customRollPreview = document.getElementById("custom-roll-preview"); //Gets the custom roll preview element from the HTML
 
@@ -41,10 +41,9 @@ function rollCustomDice(numberOfDice, sides, modifier) { //Function to perform a
   const result = rollsTotal + modifier;
 
   if (modifier >= 0) { //Returns the result of the custom roll in a string
-      return `You rolled: ${numberOfDice}d${sides} + ${modifier}\nDice rolls: ${diceRolls.join(', ')}\nModifier: ${modifier}\nFinal Result: ${result}`
+      return `You roll: ${numberOfDice}d${sides} + ${modifier}\nRoll outcomes: ${diceRolls.join(', ')}\nResult: ${rollsTotal} \nModifier: ${modifier}\nFinal Result: ${result}`
   } else {
-    let absoluteModifierValue = Math.abs(modifier);
-    return `You rolled: ${numberOfDice}d${sides} - ${absoluteModifierValue}\nDice rolls: ${diceRolls.join(', ')}\nModifier: ${modifier}\nFinal Result: ${result}`
+    return `You roll: ${numberOfDice}d${sides} - ${Math.abs(modifier)}\nRoll outcomes: ${diceRolls.join(', ')}\nResult: ${rollsTotal} \nModifier: ${modifier}\nFinal Result: ${result}`
   }
 }
 
@@ -66,18 +65,20 @@ updateCustomRollPreview(); //Updates the custom roll preview display on page loa
 //ROLL WITH ADVANTAGE/DISADVANTAGE/PERCENTILE FUNCTIONALITY
 
 function rollWithAdvantage() { //Function to roll with advantage and return the result in a string
+  const modifier = parseInt(modifierInputAdvantageDisadvantage.value, 10);
   const roll1 = Math.floor(Math.random() * 20) + 1;
   const roll2 = Math.floor(Math.random() * 20) + 1;
   const result = roll1 >= roll2 ? roll1 : roll2;
-  const output = `Rolling with advantage: ${roll1}, ${roll2}\nresult: ${result}`;
+  const output = `You roll with advantage \nRoll outcomes:${roll1}, ${roll2}\nYour result is: ${result}\nModifier: ${modifier}\nFinal Result: ${result + modifier}`;
   return output; //add winning roll to output
 }
 
 function rollWithDisadvantage() { //Function to roll with disadvantage and return the result in a string
+  const modifier = parseInt(modifierInputAdvantageDisadvantage.value, 10);
   const roll1 = Math.floor(Math.random() * 20) + 1;
   const roll2 = Math.floor(Math.random() * 20) + 1;
   const result = roll1 <= roll2 ? roll1 : roll2;
-  const output = `Rolling with disadvantage: ${roll1}, ${roll2}\nresult: ${result}`;
+  const output = `You roll with disadvantage \nRoll outcomes: ${roll1}, ${roll2} \nYour result is: ${result}\nModifier: ${modifier}\nFinal Result: ${result + modifier}`;
   return output; //add losing roll to output
 }
 
@@ -90,7 +91,7 @@ function rollPercentile() { //Function to roll percentile dice and return the re
   } else {
     result = rollD10 + rollD100;
   }
-  output = `Rolling percentile Dice: ${rollD100}, ${rollD10} \nResult: ${result} `;
+  output = `You roll percentile dice \nRoll outcomes: ${rollD100}, ${rollD10} \nResult: ${result} `;
   return output;
 
 }
