@@ -35,9 +35,43 @@
       <img id="dice-image" src="images/dice-set.png" alt="Graphic of six dice types from D and D">
     </div>
 
-    <div>
-      <h2>Choose from the dice types, select how many to roll, add modifiers, and roll to see results!
-      </h2>
+    <div class="intro-section">
+
+      <div class="blurb-text">
+        <h2>Choose a type of dice, choose how many dice to roll, add a modifier, and roll to see results!
+        </h2>
+      </div>
+
+      <button id="help-button" type="button">Help</button>
+
+      <div id="help-popup" class="popup">
+        <div class="popup-content">
+          <span id="close-button" class="close-button">&times;</span>
+          <div class="popup-text">
+            <p>Welcome to D&D Dice Roller, a tool for simulating dice rolls in games of Dungeons and Dragons, Fifth Edition. </p>
+            <hr>
+            <h3>Number of Dice: </h3>
+            <p>You choose the number of dice to be rolled at the same time. The results of all dice rolls are added together into a single result.</p>
+
+            <h3>Sides: </h3>
+            <p>In Dungeons and Dragons, there are six types of dice. These are 4-sided, 6-sided, 8-sided, 10-sided, 12-sided, and 20-sided dice. These are referred to with a lowercase letter ‘d’ followed by the number of sides. E.g. a 4-sided dice is called a d4. A 6-sided dice is called a d6, and so on. In front of this is the number of dice to be rolled. E.g. rolling six 4-sided dice together is referred to as 6d4. </p>
+            <h3>Modifier: </h3>
+            <p>You may add a modifier to the result when rolling a set of dice. This can be a positive or negative number that alters the result by that amount. After all dice are rolled, and the sum of the dice outcomes is calculated, the modifier is applied. A modifier of 2 will increase the result by 2.  A modifier of -3 will reduce the result by 3. </p>
+            <p>Rolling two 12-sided dice, with a negative modifier of -5, is referred to as 2d12 – 5</p>
+            <p>Rolling eight 6-sided dice, with a positive modifier of 10, is referred to as 8d6 + 10</p>
+            <hr>
+            <h3> Rolling with Advantage: </h3>
+            <p> In D&D, a common action is to roll two 20-sided dice, and take the higher of the two outcomes as the result. E.g., if the results of rolling two dice are 10 and 15, the 10 is discarded and the higher roll, 15, is taken as the result. This is called rolling with advantage. A modifier may also be applied to this result.</p>
+            <h3> Rolling with Disadvantage: </h3>
+            <p>Similarly, you will sometimes roll two 20-sided dice and take the lower of the two outcomes as the result. This is called rolling with disadvantage. A modifier may also be applied to the result</p>
+            <hr>
+            <h3>Rolling Percentile Dice</h3>
+            <p>Another less common action is to roll two 10-sided dice and calculate an overall result from 1 to 100. This is called a percentile roll, and sometimes called a d100 roll. A modifier is not typically applied in official fifth edition rules. <p>
+
+          </div>
+        </div>
+      </div>
+
     </div>
 
 
@@ -96,6 +130,7 @@
     <div class="percentile-dice-area">
       <button id="roll-percentile-button" type="button">Roll Percentile Dice</button>
     </div>
+    <p>This Dice rolling app is an ongoing work in progress. Coming soon: full responsiveness at small and mid screen sizes</p>  </p>
 </div>
 
 

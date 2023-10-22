@@ -7,14 +7,15 @@ const modifierInputAdvantageDisadvantage = document.getElementById('advantage-di
 
 const customRollPreview = document.getElementById("custom-roll-preview"); //Gets the custom roll preview element from the HTML
 
-const customRollButton = document.getElementById("custom-roll-button"); //Gets the button elements from the HTML
+const customRollButton = document.getElementById("custom-roll-button"); //Gets the dice roll button elements from the HTML
 const rollWithAdvantageButton = document.getElementById("roll-advantage-button");
 const rollWithDisadvantageButton = document.getElementById("roll-disadvantage-button");
 const rollPercentileButton = document.getElementById("roll-percentile-button");
 const outputScreen = document.getElementById("output-screen");
 
-
-
+const helpButton = document.getElementById('help-button'); //Gets the help button and popup elements from the HTML
+const helpPopup = document.getElementById('help-popup');
+const closeButton = document.getElementById('close-button');
 
 
 //CUSTOM ROLL FUNCTIONALITY
@@ -132,4 +133,18 @@ rollWithDisadvantageButton.addEventListener("click", function() { //Calls the ro
 rollPercentileButton.addEventListener("click", function() { //Calls the rollPercentile function and displays the result in the output screen
   const result = rollPercentile();
   outputScreen.innerText = result;
+});
+
+helpButton.addEventListener('click', function () { //Opens the help popup when the help button is clicked
+  helpPopup.style.display = 'block';
+});
+
+closeButton.addEventListener('click', function () { //Closes the help popup when the close button is clicked
+  helpPopup.style.display = 'none';
+});
+
+helpPopup.addEventListener('click', function (e) { //Closes the help popup when the area outside the popup content is clicked
+  if (e.target === helpPopup) {
+    helpPopup.style.display = 'none';
+  }
 });
